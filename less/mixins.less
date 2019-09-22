@@ -1,0 +1,45 @@
+// flex mixin
+.flexColumn {
+    display:flex;
+    flex-direction: column;
+    align-items:space-evenly;
+}
+
+.flexRow {
+    display:flex;
+    justify-content:space-evenly;
+}
+
+
+// text block mixin
+
+.textBlock {
+    line-height: 2.0;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+
+
+// image mixin
+
+
+
+// button mixin
+
+.custom-btn(@bgcolor:@eastern-blue, @width:210px, @btFont:@white){
+    background-color: @bgcolor;
+    margin: 0 0px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @btFont;
+    padding-top: 5%;
+    
+    &:hover {
+      background-color:@btFont;
+      color:@bgcolor;
+    }
+}

@@ -1,3 +1,17 @@
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+}
+.flexRow {
+  display: flex;
+  justify-content: space-evenly;
+}
+.textBlock {
+  line-height: 2;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
 html,
 body,
 div,
@@ -130,4 +144,64 @@ html,
 body {
   height: 100%;
   padding: 2%;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 40%;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 40%;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 40%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10%;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+}
+.container .story {
+  border: 1px solid black;
+}
+.container .features {
+  border: 1px solid black;
+}
+.container .use-case {
+  border: 1px solid black;
+}
+.container .team {
+  border: 1px solid black;
 }
