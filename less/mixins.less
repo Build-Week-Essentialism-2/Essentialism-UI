@@ -15,7 +15,7 @@
 
 // button mixin
 
-.custom-btn(@bgcolor:@btn-background, @btFont:@white-space){
+.custom-btn(@bgcolor:@btn-background, @btFont:@div-color){
     background: @bgcolor;
     margin: 10px 0px 20px;
     cursor: pointer;
@@ -25,6 +25,8 @@
     color: @btFont;
     box-shadow: none;
     border:none;
+    font-size: 2rem;
+    line-height: 45px;
     
     &:hover {
       background: @btFont;
