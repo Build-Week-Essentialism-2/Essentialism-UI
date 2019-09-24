@@ -43,8 +43,15 @@ header{
     padding:2%;
     margin: 0 auto;
     width: 50%;
-    margin-bottom: 10%;
+    margin-bottom: 31%;
     padding-top: 5%;
+    display:flex;
+    justify-content: flex-start;
+
+    @media @phone {
+        width: 92%;
+    }
+    
     .motto {
         width: 100%;
         height: 100%;
@@ -52,6 +59,18 @@ header{
         justify-content: space-between;
         flex-wrap: wrap;
         color: #5A9CB2;
+        margin-top:20%;
+
+        @media @phone {
+            flex-wrap: nowrap;
+            margin-top:40%;
+        }
+
+        h2 {
+            @media @phone {
+                font-size: 2.7rem;
+            }
+        }
 
         .positive1 {
             -webkit-animation: text-pop-up-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;

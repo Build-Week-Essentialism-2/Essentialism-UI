@@ -19,9 +19,9 @@ nav {
         @media @phone {
             display:flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
-            padding: 5% 1%;
+            height: 15vh;
         }
 
         a {
@@ -33,26 +33,23 @@ nav {
     }
 
     .nav2{
-       display: flex;
-       justify-content: flex-end;
-       flex-grow: 3;
-       background-color: @btn-bgnd;
-       padding: 1% 1%;
-       @media @phone {
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5% 1%;
-    }
+
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 3;
+        background-color: @btn-bgnd;
+        padding: 1% 1%;
+        @media @phone {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 20vh;
+        }
         a {
             text-decoration: none;
             padding: 0px 5px;
             color: @white-space;
-            @media @phone {
-                display:flex;
-                justify-content: space-between;
-            }
         }
     }
 }
