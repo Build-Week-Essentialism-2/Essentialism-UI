@@ -1,0 +1,99 @@
+body {
+    background-image: @cloud-bgnd;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header{
+    padding:2.5% 0%;
+    width: 100%;
+    height: 60vh;
+    display:flex;
+    flex-direction: column;
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:100%;
+        padding-top: 5%;
+
+        h1 {
+            letter-spacing: 0.8rem;
+            padding: 5px 0px;
+            line-height: 45px;
+        }
+
+        h2 {
+            letter-spacing: 0.1rem;
+            padding: 5px 0px 20px 0px;
+            font-size: 2rem;
+            line-height: 45px;
+            text-align: center;
+        }
+        .btn {
+            .custom-btn(@btn-bgnd, @white-space);
+            
+        }
+    }
+}
+
+.container {
+    padding:2%;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 10%;
+    padding-top: 5%;
+    .motto {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .positive1 {
+            -webkit-animation: text-pop-up-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	        animation: text-pop-up-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) 4s infinite both;
+        }
+        .positive2 {
+            -webkit-animation: text-pop-up-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	        animation: text-pop-up-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+        }
+        .positive3 {
+            -webkit-animation: text-pop-up-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite both;
+	        animation: text-pop-up-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) 18s infinite both;
+        }
+        .positive4 {
+            -webkit-animation: text-pop-up-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940)  infinite both;
+            animation: text-pop-up-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) 14s infinite both;
+        }
+        .positive5 {
+            -webkit-animation: text-pop-up-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	        animation: text-pop-up-top 20s cubic-bezier(0.250, 0.460, 0.450, 0.940) 8s infinite both;
+        }
+    }
+
+    // .features {
+    //     background-color: @div-color;
+    //     width: 100%;
+    //     height: 18%;
+    //     border-bottom:1px solid black;
+    // }
+
+    // .use-case {
+    //     background-color: @div-color;
+    //     width: 100%;
+    //     height: 18%;
+    //     border-bottom:1px solid black;
+
+    // }
+
+    // .team {
+    //     background-color: @div-color;
+    //     width: 100%;
+    //     height: 18%;
+    //     border-bottom:1px solid black;
+
+    // }
+
+
+}
