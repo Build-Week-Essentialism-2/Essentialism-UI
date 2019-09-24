@@ -183,9 +183,9 @@ nav .nav1 {
   nav .nav1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 5% 1%;
+    height: 15vh;
   }
 }
 nav .nav1 a {
@@ -204,21 +204,15 @@ nav .nav2 {
   nav .nav2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 5% 1%;
+    height: 20vh;
   }
 }
 nav .nav2 a {
   text-decoration: none;
   padding: 0px 5px;
   color: #F4F4EC;
-}
-@media (max-width:500px) {
-  nav .nav2 a {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 footer {
   background-color: #1C7980;
@@ -283,8 +277,15 @@ header .title .btn:hover {
   padding: 2%;
   margin: 0 auto;
   width: 50%;
-  margin-bottom: 10%;
+  margin-bottom: 31%;
   padding-top: 5%;
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width:500px) {
+  .container {
+    width: 92%;
+  }
 }
 .container .motto {
   width: 100%;
@@ -293,6 +294,18 @@ header .title .btn:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   color: #5A9CB2;
+  margin-top: 20%;
+}
+@media (max-width:500px) {
+  .container .motto {
+    flex-wrap: nowrap;
+    margin-top: 40%;
+  }
+}
+@media (max-width:500px) {
+  .container .motto h2 {
+    font-size: 2.7rem;
+  }
 }
 .container .motto .positive1 {
   -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
