@@ -5,12 +5,25 @@ nav {
     width: 100%;
     font-size: 2rem;
     padding: 1% 0%;
+
+    @media @phone {
+        display:flex;
+        flex-direction: column;
+    }
     .nav1{
         display: flex;
         justify-content: flex-start;
         flex-grow: 1;
         background-color: @div-color;
         padding: 1% 1%;
+        @media @phone {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5% 1%;
+        }
+
         a {
             color: @btn-bgnd;
             text-decoration: none;
@@ -25,10 +38,21 @@ nav {
        flex-grow: 3;
        background-color: @btn-bgnd;
        padding: 1% 1%;
+       @media @phone {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5% 1%;
+    }
         a {
             text-decoration: none;
             padding: 0px 5px;
             color: @white-space;
+            @media @phone {
+                display:flex;
+                justify-content: space-between;
+            }
         }
     }
 }
