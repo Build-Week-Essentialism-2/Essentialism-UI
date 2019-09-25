@@ -238,7 +238,7 @@ header {
 }
 @media (max-width:500px) {
   header {
-    height: 50vh;
+    height: 60vh;
   }
 }
 header .title {
@@ -283,7 +283,7 @@ header .title .btn:hover {
   margin: 0 auto;
   width: 98%;
   margin-bottom: 20%;
-  padding-top: 5%;
+  padding-top: 10%;
   display: flex;
   justify-content: space-between;
   align-items: space-evenly;
