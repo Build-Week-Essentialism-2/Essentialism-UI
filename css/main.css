@@ -245,10 +245,11 @@ header .title {
   padding-top: 5%;
   color: #E2E8E8;
 }
-header .title h1 {
-  letter-spacing: 0.8rem;
-  padding: 5px 0px;
-  line-height: 45px;
+header .title img {
+  background: url("/path") no-repeat;
+  width: 270px;
+  height: 100px;
+  text-indent: -9999px;
 }
 header .title h2 {
   letter-spacing: 0.1rem;
@@ -277,7 +278,7 @@ header .title .btn:hover {
   padding: 2%;
   margin: 0 auto;
   width: 50%;
-  margin-bottom: 31%;
+  margin-bottom: 20%;
   padding-top: 5%;
   display: flex;
   justify-content: flex-start;
@@ -285,6 +286,7 @@ header .title .btn:hover {
 @media (max-width:500px) {
   .container {
     width: 92%;
+    margin-bottom: 40%;
   }
 }
 .container .motto {
@@ -293,7 +295,6 @@ header .title .btn:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  color: #5A9CB2;
   margin-top: 20%;
 }
 @media (max-width:500px) {
@@ -310,22 +311,27 @@ header .title .btn:hover {
 .container .motto .positive1 {
   -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s infinite both;
+  color: #388DA9;
 }
 .container .motto .positive2 {
   -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+  color: #388DA9;
 }
 .container .motto .positive3 {
   -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) 18s infinite both;
+  color: #5A9CB2;
 }
 .container .motto .positive4 {
   -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) 14s infinite both;
+  color: #5A9CB2;
 }
 .container .motto .positive5 {
   -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) 8s infinite both;
+  color: #5A9CB2;
 }
 @-webkit-keyframes text-pop-up-top {
   0% {
