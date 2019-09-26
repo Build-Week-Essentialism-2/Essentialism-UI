@@ -169,14 +169,14 @@ nav {
 @media (max-width:500px) {
   nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 nav .nav1 {
   display: flex;
-  justify-content: flex-start;
-  flex-grow: 1;
-  background-color: #E2E8E8;
+  justify-content: space-around;
+  flex-grow: 0.5;
+  background-color: #F4F4EC;
   padding: 1% 1%;
 }
 @media (max-width:500px) {
@@ -188,19 +188,24 @@ nav .nav1 {
     height: 15vh;
   }
 }
+nav .nav1 a:first-child {
+  padding: 5px 23px;
+}
 nav .nav1 a {
-  color: #1C7980;
+  color: #F4F4EC;
   text-decoration: none;
-  padding: 5px 5px;
+  padding: 5px 16px;
+  background: rgba(38, 45, 53, 0.493);
+  margin: 0% 2%;
 }
 nav .nav1 a:hover {
   background: #1C7980;
-  color: #E2E8E8;
+  color: #F4F4EC;
 }
 nav .nav2 {
   display: flex;
   justify-content: flex-end;
-  flex-grow: 3;
+  flex-grow: 4;
   background-color: #1C7980;
   padding: 1% 1%;
 }
@@ -213,13 +218,17 @@ nav .nav2 {
     height: 20vh;
   }
 }
+nav .nav2 a:first-child {
+  padding: 5px 21px;
+}
 nav .nav2 a {
   text-decoration: none;
-  padding: 5px 5px;
+  padding: 5px 13px;
   color: #F4F4EC;
+  margin: 0% 2%;
 }
 nav .nav2 a:hover {
-  background: #E2E8E8;
+  background: #F4F4EC;
   color: #1C7980;
 }
 footer {
@@ -233,7 +242,7 @@ footer p {
   color: #E2E8E8;
 }
 body {
-  background-image: url("/blue-and-white-clounds.jpg");
+  background-image: url("/site-bgnd-grayscale.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -312,32 +321,34 @@ header .title h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding-bottom: 5%;
-  background-color: rgba(70, 243, 234, 0.329);
+  background-color: rgba(38, 45, 53, 0.493);
 }
-.container .without p {
-  font-size: 2rem;
-  color: #E2E8E8;
-  font-weight: 100;
-  font-style: italic;
+@media (max-width:500px) {
+  .container .without {
+    padding-top: 6%;
+    width: 100%;
+  }
 }
 .container .without h2 {
   font-size: 2.5rem;
   padding-top: 5%;
-  color: #1C7980;
+  color: #262D35;
+}
+.container .without p {
+  font-size: 2rem;
+  color: #F4F4EC;
+  text-align: justify;
+  width: 95%;
+  padding-bottom: 5%;
 }
 .container .without img {
   width: 90%;
 }
 @media (max-width:500px) {
   .container .without img {
-    width: 98%;
-  }
-}
-@media (max-width:500px) {
-  .container .without {
-    padding-top: 6%;
-    width: 100%;
+    width: 90%;
   }
 }
 .container .without #top-p {
