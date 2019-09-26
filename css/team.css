@@ -324,6 +324,7 @@ header .title h2 {
   justify-content: space-between;
   padding-bottom: 5%;
   background-color: rgba(38, 45, 53, 0.493);
+  margin: 1%;
 }
 @media (max-width:500px) {
   .container .without {
