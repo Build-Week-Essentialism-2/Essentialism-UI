@@ -169,14 +169,14 @@ nav {
 @media (max-width:500px) {
   nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 nav .nav1 {
   display: flex;
-  justify-content: flex-start;
-  flex-grow: 1;
-  background-color: #E2E8E8;
+  justify-content: space-around;
+  flex-grow: 0.5;
+  background-color: #F4F4EC;
   padding: 1% 1%;
 }
 @media (max-width:500px) {
@@ -188,19 +188,24 @@ nav .nav1 {
     height: 15vh;
   }
 }
+nav .nav1 a:first-child {
+  padding: 5px 23px;
+}
 nav .nav1 a {
-  color: #1C7980;
+  color: #F4F4EC;
   text-decoration: none;
-  padding: 5px 5px;
+  padding: 5px 16px;
+  background: rgba(38, 45, 53, 0.493);
+  margin: 0% 2%;
 }
 nav .nav1 a:hover {
   background: #1C7980;
-  color: #E2E8E8;
+  color: #F4F4EC;
 }
 nav .nav2 {
   display: flex;
   justify-content: flex-end;
-  flex-grow: 3;
+  flex-grow: 4;
   background-color: #1C7980;
   padding: 1% 1%;
 }
@@ -213,13 +218,17 @@ nav .nav2 {
     height: 20vh;
   }
 }
+nav .nav2 a:first-child {
+  padding: 5px 21px;
+}
 nav .nav2 a {
   text-decoration: none;
-  padding: 5px 5px;
+  padding: 5px 13px;
   color: #F4F4EC;
+  margin: 0% 2%;
 }
 nav .nav2 a:hover {
-  background: #E2E8E8;
+  background: #F4F4EC;
   color: #1C7980;
 }
 footer {
@@ -267,9 +276,10 @@ header .title img {
 header .title h2 {
   letter-spacing: 0.1rem;
   padding: 5px 0px 20px 0px;
-  font-size: 2rem;
+  font-size: 4rem;
   line-height: 45px;
   text-align: center;
+  color: rgba(38, 45, 53, 0.493);
 }
 header .title .buttons {
   display: flex;
@@ -299,20 +309,20 @@ header .title .buttons .btn:hover {
   color: #1C7980;
 }
 header .title .buttons .btn2 {
-  background: #E2E8E8;
+  background: rgba(38, 45, 53, 0.493);
   margin: 10px 0px 20px;
   cursor: pointer;
   width: 200px;
   height: 45px;
   font-size: 1.5rem;
-  color: #1C7980;
+  color: #E2E8E8;
   box-shadow: none;
   border: none;
   line-height: 45px;
 }
 header .title .buttons .btn2:hover {
-  background: #1C7980;
-  color: #E2E8E8;
+  background: #E2E8E8;
+  color: rgba(38, 45, 53, 0.493);
 }
 .container {
   padding: 2%;
