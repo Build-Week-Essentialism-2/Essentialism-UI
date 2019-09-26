@@ -1,3 +1,4 @@
+
 body {
     background-image: @cloud-bgnd;
     background-repeat: no-repeat;
@@ -24,6 +25,9 @@ header{
 
         img {
             background: url("/path") no-repeat; width: 260px; height: 90px; text-indent: -9999px;
+            @media @phone {
+                background: url("/path") no-repeat; width: 250px; height: 80px; text-indent: -9999px;
+            }
         }
 
         h2 {
@@ -33,6 +37,11 @@ header{
             line-height: 45px;
             text-align: center;
             color: @btn-bgnd;
+
+            @media @phone {
+                font-size: 2.5rem;
+                padding: 2px 0px 20px 0px;
+            }
         }
     }
 }
@@ -43,9 +52,10 @@ header{
     margin-bottom: 5%;
     padding-top: 5%;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: space-evenly;
     text-align: center;
+    flex-wrap:wrap;
 
 
     @media @phone {
@@ -61,37 +71,33 @@ header{
     
 
     .without {
-        width: 60%;
+        width: 30%;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 5%;
-        background-color: rgba(170, 164, 164, 0.212);
+        background-color: rgba(70, 243, 234, 0.329);
 
         p {
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: @div-color;
             font-weight: 100;
             font-style: italic;
         }
     
         h2 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             padding-top:5%;
             color: @btn-bgnd;
         }
 
         img {
+
+            width: 90%;
             @media @phone {
                 width: 98%;
     
             }
-        }
-        .w-o1 {
-            // background-image: url("/P1010056.JPG");
-            // background-repeat: no-repeat;
-            // background-size: 50% 50%;
-            padding-top: 0%;
         }
 
         
@@ -121,55 +127,8 @@ header{
         }
     }
 
-    .with {
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgba(77, 131, 131, 0.171);
-        @media @phone {
-            padding-top: 5%;
-            width: 100%;
-
-        }
-
-        p {
-            font-size: 2.5rem;
-            color: @btn-bgnd;
-            font-weight: 100;
-            font-style: italic;
-        }
-    
-        h2 {
-            font-size: 3rem;
-            padding-top:5%;
-            color: @div-color;
-        }
-
-        img {
-            @media @phone {
-                width: 98%;
-    
-            }
-        }
-
-        .var-line {
-            width: 3px;
-            background-color: #000;
-            top: 0;
-            bottom: 0;
-            left: 150px;
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-top: 4.48%;
-            height: 1%;
-            
-        }
-
-    }
-
-
 }
+
 
 #launch-app {
     display: flex;

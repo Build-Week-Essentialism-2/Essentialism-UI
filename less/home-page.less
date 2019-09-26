@@ -10,6 +10,10 @@ header{
     height: 60vh;
     display:flex;
     flex-direction: column;
+
+    @media @phone {
+        height: 90vh;
+    }
     .title {
         display: flex;
         flex-direction: column;
@@ -30,9 +34,27 @@ header{
             line-height: 45px;
             text-align: center;
         }
-        .btn {
-            .custom-btn(@btn-bgnd, @div-color);
-            
+
+        .buttons {
+
+            display: flex;
+            justify-content: space-evenly;
+            width: 50%;
+
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .btn {
+                .custom-btn(@btn-bgnd, @div-color);
+                
+            }
+
+            .btn2 {
+                .custom-btn(@div-color, @btn-bgnd);
+            }
+
         }
     }
 }
@@ -61,12 +83,11 @@ header{
 
         @media @phone {
             flex-wrap: nowrap;
-            margin-top:40%;
         }
 
         h2 {
             @media @phone {
-                font-size: 2.7rem;
+                font-size: 2.5rem;
             }
         }
 
