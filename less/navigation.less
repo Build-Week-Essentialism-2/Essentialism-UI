@@ -27,7 +27,12 @@ nav {
         a {
             color: @btn-bgnd;
             text-decoration: none;
-            padding: 0px 5px;
+            padding: 5px 5px;
+
+            &:hover {
+                background: @btn-bgnd;
+                color:@div-color;
+            }
             
         }
     }
@@ -48,8 +53,14 @@ nav {
         }
         a {
             text-decoration: none;
-            padding: 0px 5px;
+            padding: 5px 5px;
             color: @white-space;
+
+            &:hover {
+                background: @div-color;
+                color:@btn-bgnd;
+              }
+
         }
     }
 }

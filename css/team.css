@@ -233,144 +233,151 @@ footer p {
   color: #E2E8E8;
 }
 body {
-  background-image: url("/image.jpg");
+  background-image: url("/blue-and-white-clounds.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 header {
   padding: 2.5% 0%;
   width: 100%;
-  height: 60vh;
+  height: 45vh;
   display: flex;
   flex-direction: column;
 }
 @media (max-width:500px) {
   header {
-    height: 90vh;
+    height: 63vh;
   }
 }
 header .title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row-reverse;
   justify-content: center;
   height: 100%;
   padding-top: 5%;
-  color: #E2E8E8;
+  width: 96%;
 }
 header .title img {
   background: url("/path") no-repeat;
-  width: 270px;
-  height: 100px;
+  width: 260px;
+  height: 90px;
   text-indent: -9999px;
+}
+@media (max-width:500px) {
+  header .title img {
+    background: url("/path") no-repeat;
+    width: 250px;
+    height: 80px;
+    text-indent: -9999px;
+  }
 }
 header .title h2 {
   letter-spacing: 0.1rem;
-  padding: 5px 0px 20px 0px;
-  font-size: 2rem;
+  padding: 16px 0px 20px 0px;
+  font-size: 3rem;
   line-height: 45px;
   text-align: center;
-}
-header .title .buttons {
-  display: flex;
-  justify-content: space-evenly;
-  width: 50%;
+  color: #1C7980;
 }
 @media (max-width:500px) {
-  header .title .buttons {
-    display: flex;
-    flex-direction: column;
+  header .title h2 {
+    font-size: 2.5rem;
+    padding: 2px 0px 20px 0px;
   }
 }
-header .title .buttons .btn {
-  background: #1C7980;
-  margin: 10px 0px 20px;
-  cursor: pointer;
-  width: 200px;
-  height: 45px;
-  font-size: 1.5rem;
-  color: #E2E8E8;
-  box-shadow: none;
-  border: none;
-  line-height: 45px;
-}
-header .title .buttons .btn:hover {
-  background: #E2E8E8;
-  color: #1C7980;
-}
-header .title .buttons .btn2 {
-  background: #E2E8E8;
-  margin: 10px 0px 20px;
-  cursor: pointer;
-  width: 200px;
-  height: 45px;
-  font-size: 1.5rem;
-  color: #1C7980;
-  box-shadow: none;
-  border: none;
-  line-height: 45px;
-}
-header .title .buttons .btn2:hover {
-  background: #1C7980;
-  color: #E2E8E8;
-}
 .container {
-  padding: 2%;
   margin: 0 auto;
-  width: 50%;
-  margin-bottom: 20%;
+  width: 97%;
+  margin-bottom: 5%;
   padding-top: 5%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  text-align: center;
+  flex-wrap: wrap;
 }
 @media (max-width:500px) {
   .container {
-    width: 92%;
-    margin-bottom: 40%;
+    padding-top: 6%;
+    width: 95%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 }
-.container .motto {
-  width: 100%;
-  height: 100%;
+.container .without {
+  width: 30%;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 20%;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+  background-color: rgba(70, 243, 234, 0.329);
+}
+.container .without p {
+  font-size: 2rem;
+  color: #E2E8E8;
+  font-weight: 100;
+  font-style: italic;
+}
+.container .without h2 {
+  font-size: 2.5rem;
+  padding-top: 5%;
+  color: #1C7980;
+}
+.container .without img {
+  width: 90%;
 }
 @media (max-width:500px) {
-  .container .motto {
-    flex-wrap: nowrap;
+  .container .without img {
+    width: 98%;
   }
 }
 @media (max-width:500px) {
-  .container .motto h2 {
-    font-size: 2.5rem;
+  .container .without {
+    padding-top: 6%;
+    width: 100%;
   }
 }
-.container .motto .positive1 {
-  -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
-  animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s infinite both;
-  color: #388DA9;
+.container .without #top-p {
+  padding-top: 5.5%;
 }
-.container .motto .positive2 {
-  -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
-  animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
-  color: #388DA9;
+.container .without #bottom-p {
+  padding-top: 1.8%;
 }
-.container .motto .positive3 {
-  -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
-  animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) 18s infinite both;
-  color: #5A9CB2;
+.container .without .var-line {
+  width: 3px;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 150px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 4.48%;
+  height: 1%;
 }
-.container .motto .positive4 {
-  -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
-  animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) 14s infinite both;
-  color: #5A9CB2;
+#launch-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.container .motto .positive5 {
-  -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
-  animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) 8s infinite both;
-  color: #5A9CB2;
+#launch-app .btn {
+  background: #1C7980;
+  margin: 10px 0px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 1.5rem;
+  color: #E2E8E8;
+  box-shadow: none;
+  border: none;
+  line-height: 45px;
+}
+#launch-app .btn:hover {
+  background: #E2E8E8;
+  color: #1C7980;
 }
 @-webkit-keyframes text-pop-up-top {
   0% {
