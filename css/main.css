@@ -360,27 +360,27 @@ header .title .buttons .btn2:hover {
 .container .motto .positive1 {
   -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s infinite both;
-  color: #388DA9;
+  color: #cbe5ee;
 }
 .container .motto .positive2 {
   -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
-  color: #388DA9;
+  color: #cbe5ff;
 }
 .container .motto .positive3 {
   -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) 18s infinite both;
-  color: #5A9CB2;
+  color: #cbe5ee;
 }
 .container .motto .positive4 {
   -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) 14s infinite both;
-  color: #5A9CB2;
+  color: #cbe5ee;
 }
 .container .motto .positive5 {
   -webkit-animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
   animation: text-pop-up-top 20s cubic-bezier(0.25, 0.46, 0.45, 0.94) 8s infinite both;
-  color: #5A9CB2;
+  color: #cbe5ee;
 }
 @-webkit-keyframes text-pop-up-top {
   0% {
