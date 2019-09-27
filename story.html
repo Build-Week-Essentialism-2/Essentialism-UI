@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <div class="nav1">
                 <a href="https://app-essentialism.netlify.com">Login</a>
                 <a href="https://app-essentialism.netlify.com">Sign Up</a>
@@ -35,7 +35,7 @@
     <!-- container div starts here -->
     <div class="container">
         <section class="without">
-                <h2>before</h2>
+                <h2>You & The World</h2>
                 <p id="top-p">Your organized</p>
                 <div class="w-o1"><img src="/imgonline-com-ua-Piconpic-BCJZRhhH8SuB.png" alt=""></div>
                 <div class="var-line">&nbsp;</div>
@@ -47,14 +47,14 @@
         </section>
 
         <section class="with">
-                <h2>after</h2>
-                <p>You set your personal values</p>
+                <h2>You + Essentialism</h2>
+                <p>Set your personal values</p>
                 <div class="w1"><img src="/choose values.png" alt=""></div>
                 <div class="var-line">&nbsp;</div>
-                <p>Compare it to your current projects</p>
+                <p>Constantly compare it to your projects</p>
                 <div class="w2"><img src="/project.png" alt=""></div>
                 <div class="var-line">&nbsp;</div>
-                <p>And remove what shouldnt be part of your life!</p>
+                <p>Realign those projects with your values</p>
                 <div class="w3"><img src="/compare.png" alt=""></div>
                 <!-- <div class="var-line">&nbsp;</div> -->
                 <!-- <p>And gives meaning to his life</p>
@@ -63,13 +63,26 @@
     </div>
 
     <div id="launch-app">
-        <a href="https://app-essentialism.netlify.com"><button class="btn"> Go essential</button></a>
+        <a href="https://app-essentialism.netlify.com"><button class="btn"> Go Essential</button></a>
     </div>
     <!-- container div ends here -->
 
     <footer>
         <p>Copyright Essentialism 2019</p>
     </footer>
-
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
 </body>
 </html>

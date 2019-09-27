@@ -1,9 +1,15 @@
 body {
-    background-image: @cloud-bgnd;
+    background-image: #F4F4EC;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
 header{
     padding:2.5% 0%;
     width: 100%;
@@ -21,6 +27,11 @@ header{
         height:100%;
         padding-top: 5%;
         width: 96%;
+
+        @media @phone {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
 
         img {
             background: url("/path") no-repeat; width: 260px; height: 90px; text-indent: -9999px;
@@ -70,6 +81,12 @@ header{
         padding-bottom: 5%;
         background-color: rgba(189, 185, 185, 0.801);
 
+        @media @phone {
+            padding-top: 6%;
+            width: 100%;
+
+        }
+
         p {
             font-size: 2.5rem;
             color: rgb(12, 106, 214);
@@ -85,24 +102,14 @@ header{
         }
 
         img {
+            border:2px solid rgba(0, 0, 0, 0);
             @media @phone {
                 width: 98%;
     
             }
         }
-        .w-o1 {
-            // background-image: url("/P1010056.JPG");
-            // background-repeat: no-repeat;
-            // background-size: 50% 50%;
-            padding-top: 0%;
-        }
 
         
-        @media @phone {
-            padding-top: 6%;
-            width: 100%;
-
-        }
 
         #bottom-p {
             padding-top:1.8%;
@@ -180,7 +187,7 @@ header{
 
     .btn {
         
-        .custom-btn(@app-black, @div-color);
+        .custom-btn(#282C37, @div-color);
         
     }
 }

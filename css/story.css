@@ -164,7 +164,6 @@ nav {
   flex-wrap: nowrap;
   width: 100%;
   font-size: 2rem;
-  padding: 1% 0%;
 }
 @media (max-width:500px) {
   nav {
@@ -176,7 +175,7 @@ nav .nav1 {
   display: flex;
   justify-content: space-around;
   flex-grow: 0.5;
-  background-color: #F4F4EC;
+  background-color: #282C37;
   padding: 1% 1%;
 }
 @media (max-width:500px) {
@@ -242,9 +241,14 @@ footer p {
   color: #E2E8E8;
 }
 body {
-  background-image: url("/blue-and-white-clounds.jpg");
+  background-image: #F4F4EC;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 header {
   padding: 2.5% 0%;
@@ -265,6 +269,12 @@ header .title {
   height: 100%;
   padding-top: 5%;
   width: 96%;
+}
+@media (max-width:500px) {
+  header .title {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 header .title img {
   background: url("/path") no-repeat;
@@ -311,6 +321,12 @@ header .title h2 {
   padding-bottom: 5%;
   background-color: rgba(189, 185, 185, 0.801);
 }
+@media (max-width:500px) {
+  .container .without {
+    padding-top: 6%;
+    width: 100%;
+  }
+}
 .container .without p {
   font-size: 2.5rem;
   color: #0c6ad6;
@@ -323,18 +339,12 @@ header .title h2 {
   color: #1C7980;
   padding-bottom: 8%;
 }
+.container .without img {
+  border: 2px solid rgba(0, 0, 0, 0);
+}
 @media (max-width:500px) {
   .container .without img {
     width: 98%;
-  }
-}
-.container .without .w-o1 {
-  padding-top: 0%;
-}
-@media (max-width:500px) {
-  .container .without {
-    padding-top: 6%;
-    width: 100%;
   }
 }
 .container .without #bottom-p {
@@ -399,7 +409,7 @@ header .title h2 {
   position: relative;
 }
 #launch-app .btn {
-  background: rgba(38, 45, 53, 0.493);
+  background: #282C37;
   margin: 10px 0px 20px;
   cursor: pointer;
   width: 200px;
@@ -412,7 +422,7 @@ header .title h2 {
 }
 #launch-app .btn:hover {
   background: #E2E8E8;
-  color: rgba(38, 45, 53, 0.493);
+  color: #282C37;
 }
 @-webkit-keyframes text-pop-up-top {
   0% {
