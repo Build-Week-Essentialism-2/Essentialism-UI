@@ -273,7 +273,7 @@ header .title {
 }
 @media (max-width:500px) {
   header .title {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
     justify-content: space-around;
   }
@@ -349,7 +349,6 @@ header .title .buttons .btn2:hover {
 @media (max-width:500px) {
   .container {
     width: 92%;
-    margin-bottom: 20%;
   }
 }
 .container .motto {

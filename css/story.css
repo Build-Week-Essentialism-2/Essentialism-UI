@@ -253,7 +253,6 @@ body {
 header {
   padding: 2.5% 0%;
   width: 100%;
-  height: 45vh;
   display: flex;
   flex-direction: column;
 }
@@ -338,9 +337,6 @@ header .title h2 {
   padding-top: 5%;
   color: #1C7980;
   padding-bottom: 8%;
-}
-.container .without img {
-  border: 2px solid rgba(0, 0, 0, 0);
 }
 @media (max-width:500px) {
   .container .without img {
