@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Essentialism</title>
     <link href="css/team.css" rel="stylesheet">
+    <script src="/Js/script.js"></script>
     <!-- external packages link below here -->
     <script src="https://kit.fontawesome.com/c0c116f2e2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
@@ -15,15 +16,15 @@
 
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <div class="nav1">
                 <a href="https://app-essentialism.netlify.com">Login</a>
                 <a href="https://app-essentialism.netlify.com">Sign Up</a>
             </div>
             <div class="nav2">
                     <a href="index.html">Home</a>
-                    <a href="story.html">The Story</a>
-                    <a href="team.html">You + Essentialism</a>
+                    <a href="story.html">You + Essentialism</a>
+                    <a href="team.html">Our Team</a>
             </div>
         </nav>
         <div class="title">
@@ -38,42 +39,42 @@
                 <h2>Roman Jordan - Team Lead</h2>
                 <p id="top-p">Interdisciplinary Full-stack wizard at The Lambda. Currently Team Lead of 3 web application projects.</p>
                 <div class="w-o1"><img src="/essentialism-Roman.jpg" alt=""></div>
-                <i class="fab fa-github"></i>
+                <i class="git" class="fab fa-github"></i>
         </section>
 
         <section class="without">
                 <h2>Elijah McKay - Backend Developer</h2>
                 <p id="top-p">I am a Fullstack Web Development student at Lambda School, where I have learned and used technologies such as React.js, Redux, Node.js, SQL/SQLite, Knex.js, and much more.</p>
                 <div class="w-o1"><img src="/essentialism-elijah.png" alt=""></div>
-                <i class="fab fa-github"></i>
+                <i class="git" class="fab fa-github"></i>
         </section>
 
         <section class="without">
                 <h2>Samir Lilienfeld - React II Developer</h2>
                 <p id="top-p">I am a student at Lambda School studying Full-Stack Web Development with a background in petroleum engineering and a track record of leadership and innovation.</p>
                 <div class="w-o1"><img src="/essentialism-samir.jpg" alt=""></div>
-                <i class="fab fa-github"></i>
+                <i class="git" class="fab fa-github"></i>
         </section>
 
         <section class="without">
                 <h2>Jayne C Norrie - React I Developer</h2>
                 <p id="top-p">I am a Full Stack Web Developer with a superpower for building communities. When you fix code, help people, work hard, empower others, fix problems to make the world better. Those are the best feelings.</p>
                 <div class="w-o1"><img src="/essentialism-jayne.png" alt=""></div>
-                <i class="fab fa-github"></i>
+                <i class="git" class="fab fa-github"></i>
         </section>
 
         <section class="without">
                 <h2>William Berlin - React I Developer</h2>
                 <p id="top-p">I am a Full-stack developer at Lambda School, currently working with React.js and other frontend technologies. I also have a background in music education. Recently, I was a music student-teacher at a local high-school.</p>
                 <div class="w-o1"><img src="/essentialism-william.jpg" alt=""></div>
-                <i class="fab fa-github"></i>
+                <i class="git" class="fab fa-github"></i>
         </section>
 
         <section class="without">
                 <h2>Falmata Dawano - UI Developer</h2>
                 <p id="top-p">Who me? I'm a Jack of all trade, hoping to be a master of one at Lambda. I am all about Web, Startups, Entrepreneurship, Consulting, small businesses.....ect. Connect with me on my street.</p>
                 <div class="w-o1"><img src="/essentialism-falmata.jpg" alt=""></div>
-                <i class="fab fa-github"></i>
+                <i class="git" class="fab fa-github"></i>
         </section>
 
         <section class="without">
@@ -81,7 +82,7 @@
                 <p id="top-p">Full Stack Web Development student, studying to become a Software Engineer.
                         Ex-chef turned computer programmer</p>
                 <div class="w-o1"><img src="/essentialism-kevin.jpg" alt=""></div>
-                <i class="fab fa-github"></i>
+                <i class="git" class="fab fa-github"></i>
         </section>
     </div> 
     <!-- container div ends here -->
@@ -89,6 +90,19 @@
     <footer>
         <p>Copyright Essentialism 2019</p>
     </footer>
-
+    <script>
+                window.onscroll = function() {myFunction()};
+                
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                  } else {
+                    navbar.classList.remove("sticky");
+                  }
+                }
+                </script>
 </body>
 </html>

@@ -164,7 +164,6 @@ nav {
   flex-wrap: nowrap;
   width: 100%;
   font-size: 2rem;
-  padding: 1% 0%;
 }
 @media (max-width:500px) {
   nav {
@@ -176,7 +175,7 @@ nav .nav1 {
   display: flex;
   justify-content: space-around;
   flex-grow: 0.5;
-  background-color: #F4F4EC;
+  background-color: #282C37;
   padding: 1% 1%;
 }
 @media (max-width:500px) {
@@ -242,9 +241,14 @@ footer p {
   color: #E2E8E8;
 }
 body {
-  background-image: url("/site-bgnd-grayscale.jpg");
+  background-image: #F4F4EC;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 header {
   padding: 2.5% 0%;
@@ -265,6 +269,12 @@ header .title {
   height: 100%;
   padding-top: 5%;
   width: 96%;
+}
+@media (max-width:500px) {
+  header .title {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 header .title img {
   background: url("/path") no-repeat;
@@ -298,7 +308,6 @@ header .title h2 {
   margin: 0 auto;
   width: 97%;
   margin-bottom: 5%;
-  padding-top: 5%;
   display: flex;
   justify-content: space-evenly;
   align-items: space-evenly;
@@ -345,12 +354,16 @@ header .title h2 {
   padding-bottom: 5%;
 }
 .container .without img {
-  width: 90%;
+  width: 75%;
 }
 @media (max-width:500px) {
   .container .without img {
     width: 90%;
   }
+}
+.container .without .git {
+  width: 5%;
+  height: 5%;
 }
 .container .without #top-p {
   padding-top: 5.5%;

@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <div class="nav1">
                 <a href="https://app-essentialism.netlify.com">Login</a>
                 <a href="https://app-essentialism.netlify.com">Sign Up</a>
@@ -40,11 +40,11 @@
     <!-- container div starts here -->
     <div class="container">
         <section class="motto">
-            <h2 class="positive1">Essentials</h2>
+            <h2 class="positive1">Essential</h2>
             <h2 class="positive2">Values</h2>
-            <h2 class="positive3">Priotity</h2>
+            <h2 class="positive3">Priority</h2>
             <h2 class="positive4">Goals</h2>
-            <h2 class="positive5">On-Track</h2>
+            <h2 class="positive5">Simplicity</h2>
         </section>
     </div> 
     <!-- container div ends here -->
@@ -53,5 +53,19 @@
         <p>Copyright Essentialism 2019</p>
     </footer>
 
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+    </script>
 </body>
 </html>
